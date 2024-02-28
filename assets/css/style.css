@@ -35,7 +35,12 @@ h6 {
 .row {
   flex-wrap: nowrap;
 }
+@media only screen and (max-width: 600px){
+.row{
+  flex-direction: column;
+}
 
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -46,22 +51,23 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #255876;
   width: 40px;
   height: 40px;
+  color: #fff;
   border-radius: 50px;
   transition: all 0.4s;
 }
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
+  background: #f5f8fd;
+  color: #255876;
 }
 
 .back-to-top.active {
@@ -87,19 +93,16 @@ h6 {
 }
 
 #header .profile img {
-  margin: 15px auto;
+  margin: 50px 0px 25px 11px;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 4px solid #ffffff;
 }
-
 #header .profile h1 {
   font-size: 24px;
-  margin: 0;
+  margin-left: 18px;
   padding: 0;
   font-weight: 600;
-  -moz-text-align-last: center;
-  text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
 
@@ -110,13 +113,13 @@ h6 {
 }
 
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   background: #ffffff;
   color: #255876;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin-right: 7px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -125,8 +128,8 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: #255876;
+  color:#f5f8fd;
   text-decoration: none;
 }
 
@@ -218,7 +221,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #255876;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -287,7 +290,7 @@ canvas {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #179B9E;
+  border-bottom: 3px solid #f5f8fd;
 }
 
 @media (min-width: 1024px) {
@@ -300,14 +303,32 @@ canvas {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    color: #255876;
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    color: #255876;
+  }
+  #hero p span {
+    color: #255876;
+    border-bottom: 3px solid #255876;
+  }
+#hero p{
+  color: #255876;
+}
+#hero {
+  top: 25%;
+}
+  canvas {
+    background: #f5f8fd!important;
+    height: 70vh!important;
+    width: 100%;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -340,7 +361,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #255876;
   bottom: 0;
   left: 0;
 }
@@ -361,6 +382,21 @@ section {
   color: #173b6c;
 }
 
+.about .content h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 85px;
+  height: 3px;
+  background: #255876;
+  bottom: 0;
+  top: 43px;
+  left: 18px;
+}
+
+.about .fst-italic {
+  margin-top: 25px;
+}
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -378,13 +414,28 @@ section {
 
 .about .content ul i {
   font-size: 16px;
-  margin-right: 5px;
-  color: #149ddd;
+  margin-right: 10px;
+  color: #255876;
   line-height: 0;
 }
-
 .about .content p:last-child {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 600px){
+.about .content ul strong {
+  width: 25%;
+}
+.about .content h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 85px;
+  height: 3px;
+  background: #255876;
+  bottom: 0;
+  top: 60px;
+  left: 18px;
+}
 }
 /*--------------------------------------------------------------
 # Akills
@@ -447,17 +498,28 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
+  color: #255876;
+  margin-bottom: 15px;
 }
-
+.resume .resume-item h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #255876;
+  bottom: 0px;
+  top: 26px;
+  left: 21px;
+}
 .resume .resume-item h5 {
   font-size: 16px;
   background: #e4edf9;
-  padding: 5px 15px;
+  padding: 10px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .resume .resume-item ul {
@@ -645,18 +707,14 @@ position: absolute;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
 /* 3 */
 .btn-3 {
-  background: rgb(0, 0, 0);
-background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-width: 140px;
-height: 45px;
-line-height: 45px;
+  background: #255876;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
   padding: 0;
   border: none;
 }
@@ -665,7 +723,10 @@ line-height: 45px;
   display: block;
   width: 100%;
   height: 100%;
+  font-size: 18px;
   color: white;
+  font-family: 'Nunito';
+  font-weight: 500;
 }
 .btn-3:before,
 .btn-3:after {
@@ -944,17 +1005,17 @@ line-height: 45px;
 .contact .info p {
   padding: 0 0 12px 60px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 17px;
   color: #173b6c;
 }
-.contact .info .email p {
-  padding-top: 5px;
-}
+
 
 .contact .info .social-links {
   padding-left: 60px;
 }
-
+.social-links.mt-3 {
+  margin-left: 16px;
+}
 .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -971,15 +1032,15 @@ line-height: 45px;
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: #f5f8fd;
+  color: #255876;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
+  background: #f5f8fd;
+  color: #255876;
 }
 
 @keyframes animate-loading {
@@ -1075,4 +1136,3 @@ a {
     padding-right: 20px 15px;
   }
 }
-
