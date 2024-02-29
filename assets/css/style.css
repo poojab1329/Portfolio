@@ -152,7 +152,14 @@ h6 {
     padding-right: 12px;
   }
 }
-
+@media only screen and (max-width: 420px	) {
+  canvas {
+ height: 35vh !important;
+}
+#hero {
+  top: 12%;
+}
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
