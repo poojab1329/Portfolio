@@ -787,6 +787,39 @@ position: absolute;
   width: 100%;
 }
 .screen1 img {
+  bottom: -200px;
+}
+.screen {
+  height: 500px;
+}
+.tabcontent {
+  padding: 0px 0px;
+  height: 830px;
+}
+.screen7 img {
+  bottom: -1270px;
+}
+.screen2 img {
+  bottom: -1590px;
+}
+.screen8 img {
+  bottom: -1125px;
+}
+.screen6 img {
+  bottom: -510px;
+}
+.screen3 img {
+  bottom: -450px;
+}
+.screen4 img {
+  bottom: -1810px;
+}
+.screen5 img {
+  bottom: -1300px;
+}
+}
+@media only screen and (min-width: 375px) {
+.screen1 img {
   bottom: -115px;
 }
 .screen {
