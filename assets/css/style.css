@@ -599,8 +599,8 @@ section {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 25%;
-  height: 700px;
+  width: 30%;
+  height: 800px;
 }
 
 /* Style the buttons inside the tab */
@@ -638,19 +638,20 @@ section {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 75%;
+  width: 70%;
   border-left: none;
-  height: 700px;
+  height: 800px;
 }
 
 .tab-content {
   display: flex;
   gap: 20px;
+  flex-direction: column;
 }
 
 .content {
   position: relative;
-  width: 69%;
+  width: 100%;
 }
 
 .tab-demo p {
@@ -663,10 +664,9 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .screen {
   display: block;
-  height: 700px;
+  height: 530px;
   overflow: hidden;
   position: relative;
   border: 1px solid #69696933;
@@ -690,10 +690,10 @@ section {
   position: absolute;
   height: auto;
   width: 100%;
-  bottom: -328px;
+  bottom: -975px;
 }
 .screen2 img {
-  bottom: -2360px;
+  bottom: -3950px;
   width: 100%;
   height: auto;
   position: absolute;
@@ -703,42 +703,148 @@ section {
   position: absolute;
   height: auto;
   width: 100%;
-  bottom: -700px;
+  bottom: -1515px;
 }
 
 .screen4 img {
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: -2682px;
+  bottom: -4422px;
 }
 
 .screen5 img {
   height: auto;
   width: 100%;
   position: absolute;
-  bottom: -1932px;
+  bottom: -3325px;
 }
 
 .screen6 img {
   width: 100%;
   height: auto;
-  bottom: -775px;
+  bottom: -1627px;
   position: absolute;
 }
-
 .screen7 img {
   height: auto;
   width: 100%;
   position: absolute;
-  bottom: -1900px;
+  bottom: -3275px;
 }
-
 .screen8 img {
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: -1680px;
+  bottom: -2955px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .tab {
+    width: 100%;
+    height: 620px;
+}
+.tabcontent {
+  padding: 0px 0px;
+  width: 100%;
+  margin-top: 15px;
+  height: auto;
+}
+.screen img{
+  top: 0;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .screen {
+    height: 450px;
+  }
+  .screen1 img {
+    bottom: -360px;
+}
+.screen7 img {
+  bottom: -1600px;
+}
+.screen2 img {
+  bottom: -1966px;
+}
+.screen8 img {
+  bottom: -1428px;
+}
+.screen6 img {
+  bottom: -712px;
+}
+.screen3 img {
+  bottom: -650px;
+}
+.screen4 img {
+  bottom: -2218px;
+}
+.screen5 img {
+  bottom: -1628px;
+}
+} 
+@media only screen and (min-width: 1024px) {
+  .screen1 img {
+    bottom: -577px;
+  }
+  .screen7 img {
+    bottom: -2270px;
+}
+.screen2 img {
+  bottom: -2765px;
+}
+.screen8 img {
+  bottom: -2030px;
+}
+.screen6 img {
+  bottom: -1056px;
+}
+.screen3 img {
+  bottom: -970px;
+}
+.screen4 img {
+  bottom: -3107px;
+}
+.screen5 img {
+  bottom: -2303px;
+}
+.tab {
+  height: 810px;
+}
+p {
+  margin-bottom: 0rem;
+}
+section {
+  padding: 30px 0px;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .screen1 img {
+    bottom: -753px;
+  }
+  .screen7 img {
+    bottom: -2715px;
+}
+.screen2 img {
+  bottom: -3290px;
+}
+.screen8 img {
+  bottom: -2443px;
+}
+.screen6 img {
+  bottom: -1310px;
+}
+.screen3 img {
+  bottom: -1210px;
+}
+.screen4 img {
+  bottom: -3694px;
+}
+.screen5 img {
+  bottom: -2755px;
+}
+p {
+  margin-bottom: 0rem;
+}
 }
 
 .screen:hover img {
@@ -751,11 +857,10 @@ section {
 }
 
 .tab-demo {
-  width: 37%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .frame {
   width: 100%;
   margin: 25px auto;
@@ -863,7 +968,7 @@ section {
   width: 100%;
 }
 
-@media only screen and (min-width: 425px) and (max-width: 425px) {
+/* @media only screen and (min-width: 425px) and (max-width: 425px) {
   .tab {
     width: 100%;
   }
@@ -921,7 +1026,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 320px)
+@media only screen and (max-width: 320px)
 {
   .tab {
     width: 100%;
@@ -1015,8 +1120,8 @@ section {
 }
 @media only screen and (min-width: 1280px) and (max-width: 1919px) {
   .screen1 img {
-    bottom: -174px;
-  }
+    bottom: -753px;
+}
 
   .screen7 img {
     bottom: -1508px;
@@ -1103,7 +1208,10 @@ section {
 .screen5 img {
   bottom: -2426px;
 }
-}
+} */
+
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
