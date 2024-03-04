@@ -782,7 +782,7 @@ section {
   bottom: -1628px;
 }
 } 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
   .screen1 img {
     bottom: -577px;
   }
